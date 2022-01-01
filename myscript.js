@@ -47,6 +47,7 @@ function next() {
     if (num == 4) {
         $(".question").hide();
         $('.result').show();
+        $('.bg-modal').hide();
         var k = 0;
         for (var key in li) {
             for (var i = 0; i < 3; i++) {
@@ -90,6 +91,7 @@ function next() {
 }
 
 $('#randomSelection').click(function () {
+    $(".overlay").show();
     $(".bg-modal").show();
     var filteredLi = realLi.filter(function (x) {
         return x !== undefined;
@@ -99,8 +101,9 @@ $('#randomSelection').click(function () {
 });
 
 function exit_random() {
-    
+    $(".overlay").hide();
     $(".bg-modal").hide();
-    $('#random_result').remove();
+    const myNode = document.getElementById("random_result");
+    myNode.innerHTML = '';
 
 }
