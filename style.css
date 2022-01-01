@@ -5,6 +5,8 @@
     font-style: normal;
 }
 
+
+
 article {
     display: flex;
     flex-direction: column;
@@ -84,8 +86,12 @@ article {
 
     background: #F2F2F2;
 
+}
+
+.start .container_copyright {
     margin-top: 118px;
 }
+
 
 #copyright {
     background: #F2F2F2;
@@ -141,17 +147,29 @@ article {
     box-sizing: border-box;
     border-radius: 10px;
 
+}
+
+.response_button:focus {
     outline: none;
+    box-shadow: none;
 }
 
-.start {
-    display: none;
+.response_button:hover {
+    background: #E7E7E7;
 }
 
+.question .container_copyright {
+    margin-top: 290px;
+}
 
-/* .question {
+/* .start {
     display: none;
 } */
+
+
+.question {
+    display: none;
+}
 
 .result {
     display: none;
