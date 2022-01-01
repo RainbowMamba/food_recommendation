@@ -5,7 +5,9 @@
     font-style: normal;
 }
 
-
+html, body {
+    height: 100%;
+}
 
 article {
     display: flex;
@@ -149,31 +151,149 @@ article {
 
 }
 
-.response_button:focus {
+.button:focus {
     outline: none;
     box-shadow: none;
 }
 
-.response_button:hover {
+.button:hover {
     background: #E7E7E7;
 }
 
 .question .container_copyright {
-    margin-top: 290px;
+    margin-top: 450px;
 }
 
-/* .start {
+#result_title {
+    margin-top: 100px;
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 52px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.result_image_container {
+    margin-top: 30px;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.random_choice_button {
+    margin-top: 60px;
+    margin-bottom: 38px;
+    width: 268px;
+    height: 58px;
+
+    background: #F0F0F0;
+    border: 1px solid #929292;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.result .container_copyright {
+    margin-top: 190px;
+}
+
+.bg-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.modal-content {
+    margin-top: 40px;
+    position: relative;
+    width: 428px;
+    height: 80%;
+
+    background: rgba(230, 230, 230, 1);
+    border-radius: 10px;
+}
+
+.exit {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.result_modal_text1 {
+    margin-top: 18%;
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 47px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.result_modal_text2 {
+    margin-top: 8%;
+    width: max-content;
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 37px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+#share_button {
+    margin-top: 12%;
+    background: #F0F0F0;
+    border: 1px solid #929292;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 31px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.start {
     display: none;
-} */
+}
 
 
 .question {
     display: none;
 }
 
-.result {
+/* .result {
     display: none;
-}
+} */
 
 #image {
     width: 300px;
@@ -182,7 +302,7 @@ article {
 }
 
 .share {
-    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .kakao_ad {

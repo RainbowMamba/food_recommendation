@@ -35,13 +35,14 @@ $('#C').click(function () {
     next();
 });
 
-$('#randomSelection').click(function () {
-    var filteredLi = realLi.filter(function (x) {
-        return x !== undefined;
-    });
-    const randomElement = filteredLi[Math.floor(Math.random() * filteredLi.length)];
-    alert(randomElement);
-});
+function add_img(food_name,container) {
+    var img = document.createElement('img');
+    img.src = "img/" + food_name + ".png";
+    img.alt = food_name;
+    img.class = food_name;
+    document.getElementById(container).appendChild(img);
+}
+
 function next() {
     if (num == 4) {
         $(".question").hide();
@@ -66,7 +67,14 @@ function next() {
         var filteredLi = realLi.filter(function (x) {
             return x !== undefined;
         });
-        $('#animal').html(filteredLi);
+
+        if (Object.keys(filteredLi).length == 0) {
+            add_img("꽝","result_images");
+        } else {
+            for (var food in filteredLi) {
+                add_img(filteredLi[food],"result_images");
+            }
+        }
         console.log(filteredLi);
     } else {
         $("#progress_text").html(num + "/" + 3);
@@ -79,4 +87,20 @@ function next() {
         $('#sListShow').html(sList);
         num++;
     }
+}
+
+$('#randomSelection').click(function () {
+    $(".bg-modal").show();
+    var filteredLi = realLi.filter(function (x) {
+        return x !== undefined;
+    });
+    const randomElement = filteredLi[Math.floor(Math.random() * filteredLi.length)];
+    add_img(randomElement,"random_result");
+});
+
+function exit_random() {
+    
+    $(".bg-modal").hide();
+    $('#random_result').remove();
+
 }
