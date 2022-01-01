@@ -1,17 +1,163 @@
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 article {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.question {
+#subtitle_text {
+    width: 346px;
+    height: 50px;
+
+    font-family: SeoulNamsan;
+    font-size: 48px;
+    line-height: 48px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    margin-top: 100px;
+}
+
+#title_text {
+    width: 396px;
+    height: 80px;
+
+    font-family: SeoulNamsan;
+    font-size: 64px;
+    line-height: 64px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    margin-top: 25px;
+}
+
+#main_image {
+    width: 363px;
+    height: 316px;
+    margin-top: 1%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#start_button {
+    background-color: #ffffff;
+    width: 230px;
+    height: 74px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 31px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    margin-top: 3%;
+}
+
+.container_copyright {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background: #F2F2F2;
+
+    margin-top: 118px;
+}
+
+#copyright {
+    background: #F2F2F2;
+
+    font-family: SeoulNamsan;
+    font-size: 16px;
+    line-height: 16px;
+
+    text-align: center;
+
+    color: #686868;
+
+}
+
+#progress_text {
+    font-family: SeoulNamsan;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    margin-top: 5%;
+}
+
+.progress {
+    margin-top: 35px;
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#question_title {
+    font-family: SeoulNamsan;
+    font-size: 36px;
+    line-height: 43px;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 2%;
+
+    color: #000000;
+}
+
+.response_button {
+    margin-top: 2%;
+    width: 532.5px;
+    height: 55.38px;
+
+    background: #F0F0F0;
+    border: 1px solid #9D9D9D;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    outline: none;
+}
+
+.start {
     display: none;
 }
+
+
+/* .question {
+    display: none;
+} */
 
 .result {
     display: none;
 }
 
-#image{
+#image {
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -21,7 +167,7 @@ article {
     margin: 0 auto;
 }
 
-.kakao_ad{
+.kakao_ad {
     width: 350px;
     margin: 0 auto;
 }
