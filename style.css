@@ -12,6 +12,11 @@ html, body {
 article {
     display: flex;
     flex-direction: column;
+    height: 100%;
+}
+
+article.result {
+    height: fit-content;
 }
 
 #subtitle_text {
@@ -30,7 +35,7 @@ article {
 }
 
 #title_text {
-    width: 396px;
+    width: fit-content;
     height: 80px;
 
     font-family: SeoulNamsan;
@@ -60,9 +65,9 @@ article {
 #start_button {
     background-color: #ffffff;
     width: 230px;
-    height: 74px;
+    height: 90px;
     border: 1px solid #000000;
-    box-sizing: border-box;
+
     border-radius: 10px;
 
     font-family: SeoulNamsan;
@@ -72,10 +77,11 @@ article {
     line-height: 31px;
     align-items: center;
     text-align: center;
+    margin-bottom: 35px;
 
     color: #000000;
 
-    margin-top: 10%;
+    margin-top: 35px;
 }
 
 .container_copyright {
@@ -87,9 +93,7 @@ article {
     align-content: center;
 
     background: #F2F2F2;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
 }
 
 .start .container_copyright {
@@ -171,7 +175,7 @@ article {
 }
 
 #result_title {
-    margin-top: 100px;
+    margin-top: 90px;
     font-family: SeoulNamsan;
     font-style: normal;
     font-weight: normal;
@@ -217,10 +221,7 @@ article {
 .share {
     display: flex;
     justify-content: center;
-}
-
-.result .container_copyright {
-    margin-top: 190px;
+    margin-bottom: 30px;
 }
 
 .bg-modal {
@@ -231,7 +232,7 @@ article {
     top: 0;
     left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -272,6 +273,7 @@ article {
 }
 
 .result_modal_text1 {
+    width: fit-content;
     margin-top: 10%;
     font-family: SeoulNamsan;
     font-style: normal;
@@ -326,6 +328,7 @@ article {
 
 
 .question {
+    height: 100%;
     display: none;
 }
 
@@ -361,6 +364,10 @@ article {
 }
 
 @media screen and (max-width: 480px) {
+
+    article {
+        height: 95%;
+    }
 
     #subtitle_text {
         font-size: 29px;
@@ -414,6 +421,38 @@ article {
 
         font-size: 18px;
         line-height: 30px;
+    }
+
+    .container_copyright {
+        height: 65px;
+    }
+
+    #copyright {
+        font-size: 12px;
+    }
+
+    /*Result Page*/
+
+    #result_title {
+        width: fit-content;
+        font-size: 25px;
+        line-height: 21px;
+    }
+
+    /*랜덤 선택 창*/
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .result_modal_text1 {
+        font-size: 29px;
+        line-height: 28px;
+    }
+
+    .random_choice_button {
+        width: 60%;
+        min-width: fit-content;
     }
 
 }
