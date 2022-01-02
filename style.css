@@ -75,7 +75,7 @@ article {
 
     color: #000000;
 
-    margin-top: 3%;
+    margin-top: 10%;
 }
 
 .container_copyright {
@@ -87,7 +87,9 @@ article {
     align-content: center;
 
     background: #F2F2F2;
-
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .start .container_copyright {
@@ -143,6 +145,10 @@ article {
     margin-top: 2%;
     width: 532.5px;
     height: 55.38px;
+
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
 
     background: #F0F0F0;
     border: 1px solid #9D9D9D;
@@ -208,7 +214,7 @@ article {
     color: #000000;
 }
 
-.share{
+.share {
     display: flex;
     justify-content: center;
 }
@@ -340,4 +346,74 @@ article {
 .kakao_ad {
     width: 350px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+
+    .progress {
+        width: 70%;
+    }
+
+    .response_button {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #subtitle_text {
+        font-size: 29px;
+        line-height: 21px;
+        height: fit-content;
+    }
+
+    #title_text {
+        font-size: 45px;
+        line-height: 43px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    #main_image {
+        margin-top: 15px;
+        width: 226px;
+        height: 196px;
+    }
+
+    #start_button {
+        width: 40%;
+        height: 50px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    #progress_text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 17%;
+    }
+
+    .progress {
+        margin-top: 20px;
+    }
+
+    #question_title {
+        font-size: 1.4em;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    #A {
+        margin-top: 0;
+    }
+
+    .response_button {
+        height: fit-content;
+        margin-top: 5%;
+
+        font-size: 18px;
+        line-height: 30px;
+    }
+
 }
