@@ -107,3 +107,14 @@ function exit_random() {
     myNode.innerHTML = '';
 
 }
+
+$('#go_to_home').click(function () {
+    $(".result").hide();
+    $(".start").show();
+    sList = [];
+    num = 1;
+    realLi = ['짜장면', '스파게티', '국밥', '닭갈비', '치킨'];
+    const resultImages = document.getElementById("result_images");
+    resultImages.innerHTML = '';
+    
+});

@@ -218,6 +218,29 @@ article.result {
     color: #000000;
 }
 
+.go_to_home {
+    margin-top: 0;
+    margin-bottom: 38px;
+    width: 268px;
+    height: 58px;
+
+    background: #F0F0F0;
+    border: 1px solid #929292;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 31px;
+
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
 .share {
     display: flex;
     justify-content: center;
