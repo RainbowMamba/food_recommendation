@@ -478,4 +478,9 @@ article.result {
         min-width: fit-content;
     }
 
+    .go_to_home {
+        width: 60%;
+        min-width: fit-content;
+    }
+
 }
