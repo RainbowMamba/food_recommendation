@@ -4,13 +4,14 @@ var q = {
     1: { "title": "면 드실?", "A": "응", "B": "아니", "C": "상관없어" },
     2: { "title": "국물 드실?", "A": "응", "B": "아니", "C": "상관없어" },
     3: { "title": "고기 위주로?", "A": "응", "B": "아니", "C": "상관없어" },
+    4: { "title": "비싼 거 드실?", "A": "응", "B": "아니", "C": "상관없어" },
 }
 var li = {
-    '짜장면': ['Y', 'N', 'N'],
-    '스파게티': ['Y', 'N', 'N'],
-    '국밥': ['N', 'Y', 'W'],
-    '닭갈비': ['N', 'N', 'Y'],
-    '치킨': ['N', 'N', 'Y']
+    '짜장면': ['Y', 'N', 'N', 'N'],
+    '파스타': ['Y', 'N', 'N', 'Y'],
+    '국밥': ['N', 'Y', 'W', 'N'],
+    '닭갈비': ['N', 'N', 'Y', 'N'],
+    '치킨': ['N', 'N', 'Y', 'N']
 };
 
 var realLi = ['짜장면', '파스타', '국밥', '닭갈비', '치킨'];
@@ -47,13 +48,13 @@ function add_img(food_name,container) {
 }
 
 function next() {
-    if (num == 4) {
+    if (num == 5) {
         $(".question").hide();
         $('.result').show();
         $('.bg-modal').hide();
         var k = 0;
         for (var key in li) {
-            for (var i = 0; i < 3; i++) {
+            for (var i = 0; i < 4; i++) {
                 if (sList[i] == 'Y') {
                     if (li[key][i] == 'N') {
                         delete realLi[k]
@@ -81,8 +82,8 @@ function next() {
         }
         console.log(filteredLi);
     } else {
-        $("#progress_text").html(num + "/" + 3);
-        $(".progress-bar").attr('style', 'width: calc(100/3*' + num + '%)');
+        $("#progress_text").html(num + "/" + 4);
+        $(".progress-bar").attr('style', 'width: calc(100/4*' + num + '%)');
         $("#question_title").html(q[num]['title']);
         $('#type').val(q[num]['type']);
         $("#A").html(q[num]['A']);
