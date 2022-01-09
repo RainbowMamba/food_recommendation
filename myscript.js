@@ -13,7 +13,7 @@ var li = {
     '치킨': ['N', 'N', 'Y']
 };
 
-var realLi = ['짜장면', '스파게티', '국밥', '닭갈비', '치킨'];
+var realLi = ['짜장면', '파스타', '국밥', '닭갈비', '치킨'];
 
 function start() {
     $(".start").hide();
@@ -39,7 +39,10 @@ function add_img(food_name,container) {
     var img = document.createElement('img');
     img.src = "img/" + food_name + ".png";
     img.alt = food_name;
-    img.class = food_name;
+    img.class = "foodImage";
+    img.style.width = 160+'px';
+    img.style.height = 220+'px';
+
     document.getElementById(container).appendChild(img);
 }
 
