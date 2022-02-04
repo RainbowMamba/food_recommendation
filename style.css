@@ -187,6 +187,19 @@ article.result {
     color: #000000;
 }
 
+#result_title_2 {
+    margin-top: 45px;
+    font-family: SeoulNamsan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
 .result_image_container {
     margin-top: 30px;
     width: 320px;
@@ -359,6 +372,10 @@ article.result {
     display: none;
 }
 
+.result-none {
+    display: none;
+}
+
 #image {
     width: 300px;
     height: 300px;
@@ -459,6 +476,12 @@ article.result {
     #result_title {
         width: fit-content;
         font-size: 25px;
+        line-height: 21px;
+    }
+
+    #result_title_2 {
+        width: fit-content;
+        font-size: 23px;
         line-height: 21px;
     }
 
