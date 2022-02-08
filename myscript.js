@@ -309,6 +309,7 @@ function next() {
 $('#randomSelection').click(function () {
     $(".overlay").show();
     $(".bg-modal").show();
+    $(".ad-banner").hide();
     
     const randomElement = filteredLi[Math.floor(Math.random() * filteredLi.length)];
     add_img(randomElement, "random_result");
@@ -317,6 +318,7 @@ $('#randomSelection').click(function () {
 function exit_random() {
     $(".overlay").hide();
     $(".bg-modal").hide();
+    $(".ad-banner").show();
     const myNode = document.getElementById("random_result");
     myNode.innerHTML = '';
 
